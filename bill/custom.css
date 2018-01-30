@@ -1,0 +1,11 @@
+.container {
+  border: 5px solid #F06A00;
+}
+
+@media print {
+    /* Your styles here */
+    #btn {
+    	display:  none;
+    }
+}
+
