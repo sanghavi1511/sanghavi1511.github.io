@@ -1,0 +1,1043 @@
+<html>
+    <head>
+        <title>Ganesh Fabrication</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+        	$(document).ready(function() {
+        		document.getElementById("containGenerate").style.display = 'none';
+
+        		
+        	});
+
+			function myFunction() {
+			    //var txt =  document.getElementById("textTo").value;
+			    var txt =  document.getElementById("firstDescMain").value;
+
+			    document.getElementById("containGenerate").style.display = '';
+			    document.getElementById("contain").style.display = 'none';
+
+			   document.getElementById("demo").innerHTML = txt;
+			}
+			//Data 0
+			function myFunctionCalculate1() {
+			      var txt1 =  document.getElementById("firstSizeMainFirst").value;
+			      var txt2 =  document.getElementById("firstSizeMainSecond").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("firstSqFTMain").value = txt3;
+			}
+
+			function myFunctionFinal1() {
+			    var txt1 =  document.getElementById("firstSizeMainFirst").value;
+			    var txt2 =  document.getElementById("firstSizeMainSecond").value;
+  				var txt3 =  document.getElementById("firstPriceMain").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("firstTotalMain").value = txt4;
+			}
+
+			function myFunctionCalculate2() {
+			      var txt1 =  document.getElementById("secondSizeMainFirst").value;
+			      var txt2 =  document.getElementById("secondSizeMainSecond").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("secondSqFTMain").value = txt3;
+			}
+
+			function myFunctionFinal2() {
+			    var txt1 =  document.getElementById("secondSizeMainFirst").value;
+			    var txt2 =  document.getElementById("secondSizeMainSecond").value;
+  				var txt3 =  document.getElementById("secondPriceMain").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("secondTotalMain").value = txt4;
+			}
+
+			function myFunctionCalculate3() {
+			      var txt1 =  document.getElementById("thirdSizeMainFirst").value;
+			      var txt2 =  document.getElementById("thirdSizeMainSecond").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("thirdSqFTMain").value = txt3;
+			}
+
+			function myFunctionFinal3() {
+			    var txt1 =  document.getElementById("thirdSizeMainFirst").value;
+			    var txt2 =  document.getElementById("thirdSizeMainSecond").value;
+  				var txt3 =  document.getElementById("thirdPriceMain").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("thirdTotalMain").value = txt4;
+			}
+			//data1
+			function myFunctionCalculate11() {
+			      var txt1 =  document.getElementById("firstSizeMainFirst1").value;
+			      var txt2 =  document.getElementById("firstSizeMainSecond1").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("firstSqFTMain1").value = txt3;
+			}
+
+			function myFunctionFinal11() {
+			    var txt1 =  document.getElementById("firstSizeMainFirst1").value;
+			    var txt2 =  document.getElementById("firstSizeMainSecond1").value;
+  				var txt3 =  document.getElementById("firstPriceMain1").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("firstTotalMain1").value = txt4;
+			}
+
+			function myFunctionCalculate21() {
+			      var txt1 =  document.getElementById("secondSizeMainFirst1").value;
+			      var txt2 =  document.getElementById("secondSizeMainSecond1").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("secondSqFTMain1").value = txt3;
+			}
+
+			function myFunctionFinal21() {
+			    var txt1 =  document.getElementById("secondSizeMainFirst1").value;
+			    var txt2 =  document.getElementById("secondSizeMainSecond1").value;
+  				var txt3 =  document.getElementById("secondPriceMain1").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("secondTotalMain1").value = txt4;
+			}
+
+			function myFunctionCalculate31() {
+			      var txt1 =  document.getElementById("thirdSizeMainFirst1").value;
+			      var txt2 =  document.getElementById("thirdSizeMainSecond1").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("thirdSqFTMain1").value = txt3;
+			}
+
+			function myFunctionFinal31() {
+			    var txt1 =  document.getElementById("thirdSizeMainFirst1").value;
+			    var txt2 =  document.getElementById("thirdSizeMainSecond1").value;
+  				var txt3 =  document.getElementById("thirdPriceMain1").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("thirdTotalMain1").value = txt4;
+			}
+
+			//data2
+			function myFunctionCalculate12() {
+			      var txt1 =  document.getElementById("firstSizeMainFirst2").value;
+			      var txt2 =  document.getElementById("firstSizeMainSecond2").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("firstSqFTMain2").value = txt3;
+			}
+
+			function myFunctionFinal12() {
+			    var txt1 =  document.getElementById("firstSizeMainFirst2").value;
+			    var txt2 =  document.getElementById("firstSizeMainSecond2").value;
+  				var txt3 =  document.getElementById("firstPriceMain2").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("firstTotalMain2").value = txt4;
+			}
+
+			function myFunctionCalculate22() {
+			      var txt1 =  document.getElementById("secondSizeMainFirst2").value;
+			      var txt2 =  document.getElementById("secondSizeMainSecond2").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("secondSqFTMain2").value = txt3;
+			}
+
+			function myFunctionFinal22() {
+			    var txt1 =  document.getElementById("secondSizeMainFirst2").value;
+			    var txt2 =  document.getElementById("secondSizeMainSecond2").value;
+  				var txt3 =  document.getElementById("secondPriceMain2").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("secondTotalMain2").value = txt4;
+			}
+
+			function myFunctionCalculate32() {
+			      var txt1 =  document.getElementById("thirdSizeMainFirst2").value;
+			      var txt2 =  document.getElementById("thirdSizeMainSecond2").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("thirdSqFTMain2").value = txt3;
+			}
+
+			function myFunctionFinal32() {
+			    var txt1 =  document.getElementById("thirdSizeMainFirst2").value;
+			    var txt2 =  document.getElementById("thirdSizeMainSecond2").value;
+  				var txt3 =  document.getElementById("thirdPriceMain2").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("thirdTotalMain2").value = txt4;
+			}
+			//Data 3
+			function myFunctionCalculate13() {
+			      var txt1 =  document.getElementById("firstSizeMainFirst3").value;
+			      var txt2 =  document.getElementById("firstSizeMainSecond3").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("firstSqFTMain3").value = txt3;
+			}
+
+			function myFunctionFinal13() {
+			    var txt1 =  document.getElementById("firstSizeMainFirst3").value;
+			    var txt2 =  document.getElementById("firstSizeMainSecond3").value;
+  				var txt3 =  document.getElementById("firstPriceMain3").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("firstTotalMain3").value = txt4;
+			}
+
+			function myFunctionCalculate23() {
+			      var txt1 =  document.getElementById("secondSizeMainFirst3").value;
+			      var txt2 =  document.getElementById("secondSizeMainSecond3").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("secondSqFTMain3").value = txt3;
+			}
+
+			function myFunctionFinal23() {
+			    var txt1 =  document.getElementById("secondSizeMainFirst3").value;
+			    var txt2 =  document.getElementById("secondSizeMainSecond3").value;
+  				var txt3 =  document.getElementById("secondPriceMain3").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("secondTotalMain3").value = txt4;
+			}
+
+			function myFunctionCalculate33() {
+			      var txt1 =  document.getElementById("thirdSizeMainFirst3").value;
+			      var txt2 =  document.getElementById("thirdSizeMainSecond3").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("thirdSqFTMain3").value = txt3;
+			}
+
+			function myFunctionFinal33() {
+			    var txt1 =  document.getElementById("thirdSizeMainFirst3").value;
+			    var txt2 =  document.getElementById("thirdSizeMainSecond3").value;
+  				var txt3 =  document.getElementById("thirdPriceMain3").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("thirdTotalMain3").value = txt4;
+			}
+			//Data 4
+			function myFunctionCalculate14() {
+			      var txt1 =  document.getElementById("firstSizeMainFirst4").value;
+			      var txt2 =  document.getElementById("firstSizeMainSecond4").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("firstSqFTMain4").value = txt3;
+			}
+
+			function myFunctionFinal14() {
+			    var txt1 =  document.getElementById("firstSizeMainFirst4").value;
+			    var txt2 =  document.getElementById("firstSizeMainSecond4").value;
+  				var txt3 =  document.getElementById("firstPriceMain4").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("firstTotalMain4").value = txt4;
+			}
+
+			function myFunctionCalculate24() {
+			      var txt1 =  document.getElementById("secondSizeMainFirst4").value;
+			      var txt2 =  document.getElementById("secondSizeMainSecond4").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("secondSqFTMain4").value = txt3;
+			}
+
+			function myFunctionFinal24() {
+			    var txt1 =  document.getElementById("secondSizeMainFirst4").value;
+			    var txt2 =  document.getElementById("secondSizeMainSecond4").value;
+  				var txt3 =  document.getElementById("secondPriceMain4").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("secondTotalMain4").value = txt4;
+			}
+
+			function myFunctionCalculate34() {
+			      var txt1 =  document.getElementById("thirdSizeMainFirst4").value;
+			      var txt2 =  document.getElementById("thirdSizeMainSecond4").value;
+
+			      var txt3 = txt1 * txt2;
+			      document.getElementById("thirdSqFTMain4").value = txt3;
+			}
+
+			function myFunctionFinal34() {
+			    var txt1 =  document.getElementById("thirdSizeMainFirst4").value;
+			    var txt2 =  document.getElementById("thirdSizeMainSecond4").value;
+  				var txt3 =  document.getElementById("thirdPriceMain4").value;
+			    var txt4 = txt1 * txt2 * txt3;
+			    document.getElementById("thirdTotalMain4").value = txt4;
+			}
+
+			//Grand total-->
+			function grandTotal() {
+				var txt1 = document.getElementById("firstTotalMain").value;
+				if (txt1 == "")
+           			txt1 = 0;
+				var txt2 = document.getElementById("secondTotalMain").value;
+				if (txt2 == "")
+           			txt2 = 0;
+				var txt3 = document.getElementById("thirdTotalMain").value;
+				if (txt3 == "")
+           			txt3 = 0;
+				var txt4 = document.getElementById("firstTotalMain1").value;
+				if (txt4 == "")
+           			txt4 = 0;
+				var txt5 = document.getElementById("secondTotalMain1").value;
+				if (txt5 == "")
+           			txt5 = 0;
+				var txt6 = document.getElementById("thirdTotalMain1").value;
+				if (txt6 == "")
+           			txt6 = 0;
+           		var txt7 = document.getElementById("firstTotalMain2").value;
+           		if (txt7 == "")
+           			txt7 = 0;
+				var txt8 = document.getElementById("secondTotalMain2").value;
+				if (txt8 == "")
+           			txt8 = 0;
+				var txt9 = document.getElementById("thirdTotalMain2").value;
+				if (txt9 == "")
+           			txt9 = 0;
+           		var txt10 = document.getElementById("firstTotalMain3").value;
+				if (txt10 == "")
+           			txt10 = 0;
+				var txt11 = document.getElementById("secondTotalMain3").value;
+				if (txt11 == "")
+           			txt11 = 0;
+				var txt12 = document.getElementById("thirdTotalMain3").value;
+				if (txt12 == "")
+           			txt12 = 0;
+           		var txt13 = document.getElementById("firstTotalMain4").value;
+				if (txt13 == "")
+           			txt13 = 0;
+				var txt14 = document.getElementById("secondTotalMain4").value;
+				if (txt14 == "")
+           			txt14 = 0;
+				var txt15 = document.getElementById("thirdTotalMain4").value;
+				if (txt15 == "")
+           			txt15 = 0;
+				var sum = parseInt(txt1) + parseInt(txt2) + parseInt(txt3) + parseInt(txt4) + parseInt(txt5) + parseInt(txt6) + parseInt(txt7) +
+				 parseInt(txt8) + parseInt(txt9) + parseInt(txt10) + parseInt(txt11) + parseInt(txt12) + parseInt(txt13) + parseInt(txt14) + parseInt(txt15) ; 
+			   
+			    document.getElementById("grandTotal1").value = sum;
+			}
+		</script>
+		 <script type="text/javascript">
+		     function printPage() {
+		     	window.print();
+		     }
+		</script>
+    </head>
+    <body >
+    <div class="container" id="contain">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2">
+
+                <h1 align="center" style="color: black; size: 15;">Ganesh Fabrication</h1>
+					
+			</div> 
+
+				
+		</div> <!---row1 -->
+
+		<div class="row">
+			<div class="col-lg-12" style="border:2px solid #F06A00"></div>
+		</div>
+
+		<form id="formSubmit">
+            <label for="exampleFormControlTextarea1">To :</label>
+			<div class="form-group">
+    			<textarea class="form-control" id="textTo" rows="1"></textarea>
+    			<textarea class="form-control" id="textTo1" rows="1"></textarea>
+    			<textarea class="form-control" id="textTo2" rows="1"></textarea>
+  			</div>
+
+  			<label for="exampleFormControlTextarea1">Subject :</label>
+  			<div class="form-group">
+    			
+    			<textarea class="form-control" id="textSubject" rows="1"></textarea>
+    			<textarea class="form-control" id="textSubject1" rows="1">Date:</textarea>
+    			<textarea class="form-control" id="textSubject2" rows="1">Bill No:</textarea>
+  			</div>
+
+  		</form>
+
+  		<div class="row">
+			<div class="col-lg-1"><b>Sr No.</b></div>
+			<div class="col-lg-4"><b>Description</b></div>
+			<div class="col-lg-2"><b>Size</b></div>
+			<div class="col-lg-1"><b>Sq Ft./KG</b></div>
+			<div class="col-lg-2"><b>Price</b></div>
+			<div class="col-lg-2"><b>Total</b></div>
+		</div>
+		<!---First Data-->
+		<div class="row">
+			<div class="col-lg-1">1</div>
+			<div class="col-lg-4"><input type="text" id="firstDescMain" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainFirst" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainSecond" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSqFTMain" size="8"  onfocus="myFunctionCalculate1()"></div>
+			<div class="col-lg-2"><input type="text" id="firstPriceMain" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="firstTotalMain" size="12"  onfocus="myFunctionFinal1()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="secondDescMain" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainFirst" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainSecond" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSqFTMain" size="8"  onfocus="myFunctionCalculate2()"></div>
+			<div class="col-lg-2"><input type="text" id="secondPriceMain" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="secondTotalMain" size="12"  onfocus="myFunctionFinal2()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="thirdDescMain" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainFirst" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainSecond" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSqFTMain" size="8"  onfocus="myFunctionCalculate3()"></div>
+			<div class="col-lg-2"><input type="text" id="thirdPriceMain" size="12" default="0"></div>
+			<div class="col-lg-2"><input type="text" id="thirdTotalMain" size="12"  onfocus="myFunctionFinal3()"></div>
+		</div>
+		<br>
+		<!-------Second Data ---->
+		<div class="row">
+			<div class="col-lg-1">2</div>
+			<div class="col-lg-4"><input type="text" id="firstDescMain1" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainFirst1" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainSecond1" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSqFTMain1" size="8"  onfocus="myFunctionCalculate11()"></div>
+			<div class="col-lg-2"><input type="text" id="firstPriceMain1" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="firstTotalMain1" size="12"  onfocus="myFunctionFinal11()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="secondDescMain1" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainFirst1" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainSecond1" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSqFTMain1" size="8"  onfocus="myFunctionCalculate21()"></div>
+			<div class="col-lg-2"><input type="text" id="secondPriceMain1" size="12" default="0"></div>
+			<div class="col-lg-2"><input type="text" id="secondTotalMain1" size="12"  onfocus="myFunctionFinal21()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="thirdDescMain1" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainFirst1" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainSecond1" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSqFTMain1" size="8"  onfocus="myFunctionCalculate31()"></div>
+			<div class="col-lg-2"><input type="text" id="thirdPriceMain1" size="12" default="0"></div>
+			<div class="col-lg-2"><input type="text" id="thirdTotalMain1" size="12"  onfocus="myFunctionFinal31()"></div>
+		</div>
+		<br>
+		<!-------Third Data ---->
+		<div class="row">
+			<div class="col-lg-1">3</div>
+			<div class="col-lg-4"><input type="text" id="firstDescMain2" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainFirst2" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainSecond2" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSqFTMain2" size="8"  onfocus="myFunctionCalculate12()"></div>
+			<div class="col-lg-2"><input type="text" id="firstPriceMain2" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="firstTotalMain2" size="12"  onfocus="myFunctionFinal12()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="secondDescMain2" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainFirst2" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainSecond2" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSqFTMain2" size="8"  onfocus="myFunctionCalculate22()"></div>
+			<div class="col-lg-2"><input type="text" id="secondPriceMain2" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="secondTotalMain2" size="12"  onfocus="myFunctionFinal22()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="thirdDescMain2" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainFirst2" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainSecond2" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSqFTMain2" size="8"  onfocus="myFunctionCalculate32()"></div>
+			<div class="col-lg-2"><input type="text" id="thirdPriceMain2" size="12" default="0"></div>
+			<div class="col-lg-2"><input type="text" id="thirdTotalMain2" size="12"  onfocus="myFunctionFinal32()"></div>
+		</div>
+		<br>
+		<!---Fourth Data-->
+		<div class="row">
+			<div class="col-lg-1">4</div>
+			<div class="col-lg-4"><input type="text" id="firstDescMain3" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainFirst3" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainSecond3" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSqFTMain3" size="8"  onfocus="myFunctionCalculate13()"></div>
+			<div class="col-lg-2"><input type="text" id="firstPriceMain3" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="firstTotalMain3" size="12"  onfocus="myFunctionFinal13()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="secondDescMain3" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainFirst3" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainSecond3" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSqFTMain3" size="8"  onfocus="myFunctionCalculate23()"></div>
+			<div class="col-lg-2"><input type="text" id="secondPriceMain3" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="secondTotalMain3" size="12"  onfocus="myFunctionFinal23()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="thirdDescMain3" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainFirst3" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainSecond3" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSqFTMain3" size="8"  onfocus="myFunctionCalculate33()"></div>
+			<div class="col-lg-2"><input type="text" id="thirdPriceMain3" size="12" default="0"></div>
+			<div class="col-lg-2"><input type="text" id="thirdTotalMain3" size="12"  onfocus="myFunctionFinal33()"></div>
+		</div>
+		<br>
+		<!---Fifth Data-->
+		<div class="row">
+			<div class="col-lg-1">5</div>
+			<div class="col-lg-4"><input type="text" id="firstDescMain4" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainFirst4" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSizeMainSecond4" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="firstSqFTMain4" size="8"  onfocus="myFunctionCalculate14()"></div>
+			<div class="col-lg-2"><input type="text" id="firstPriceMain4" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="firstTotalMain4" size="12"  onfocus="myFunctionFinal14()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="secondDescMain4" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainFirst4" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSizeMainSecond4" size="4"  default="0"></div>
+			<div class="col-lg-1"><input type="text" id="secondSqFTMain4" size="8"  onfocus="myFunctionCalculate24()"></div>
+			<div class="col-lg-2"><input type="text" id="secondPriceMain4" size="12"  default="0"></div>
+			<div class="col-lg-2"><input type="text" id="secondTotalMain4" size="12"  onfocus="myFunctionFinal24()"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-4"><input type="text" id="thirdDescMain4" size="40"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainFirst4" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSizeMainSecond4" size="4" default="0"></div>
+			<div class="col-lg-1"><input type="text" id="thirdSqFTMain4" size="8"  onfocus="myFunctionCalculate34()"></div>
+			<div class="col-lg-2"><input type="text" id="thirdPriceMain4" size="12" default="0"></div>
+			<div class="col-lg-2"><input type="text" id="thirdTotalMain4" size="12"  onfocus="myFunctionFinal34()"></div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-lg-10"></div>
+			<div class="col-lg-2"><input type="text" id="grandTotal1" size="12"  onfocus="grandTotal()"></div>
+		</div>
+  		<button onclick="myFunction()">Click Here</button>
+  	</div>
+  		<!-----FIRST div Closee-->
+  	 <div class="container" id="containGenerate">	
+
+  	 	<centre><div align="center" style="color: #F06A00; font-size: 20;";>Quotation</div></centre>
+
+        <centre><h1 align="center" style="color: black; size: 15;">Ganesh Fabrication</h1></centre>
+			
+			<div style="border:2px solid #F06A00"></div>	
+			
+			<div style="clear: both">
+			  <div style="float:left;">
+			  	<b><br> <div style="color: #F06A00;">GST No.: 24APSPP7283F1ZC</div>
+				GANESH FABRICATION</b>
+					<br>Opp: Anjali Comm. Petrol Pump, DharnidharDerasar Road,<br>
+					 Vasnna, Ahmedabad, Gujarat,380007<br>
+					<b>Phone:</b> 079-26640334, +91-98792 72373<br>
+					<b>Email:</b> Ganeshfabrication@hotmail.com<br>
+					
+			  </div>
+			  <div style="float:right;">
+			  	<img src="logo.png" width="300px" height="180px">
+			  </div>
+			</div>
+
+			<br><br>
+			
+			<div>
+			  
+			 	<table border="1" style="border:0px solid #F06A00" width="100%">
+			 		
+				    <tr height="50%">
+				        <th width="50%">To: <label id="textToData"></label></th>
+				        <th width="50%">Subject: <label id="subjectToData"></label></th>
+
+				    </tr>
+				    <tr>
+				        <td width="50%"><label id="textToData1"></label></td>
+				        <td width="50%"><label id="subjectToData1"></label></td>
+
+				    </tr>
+				    <tr>
+				        <td width="50%"><label id="textToData2"></label></td>
+				        <td width="50%"><label id="subjectToData2"></label></td>
+
+				    </tr>
+				</table>
+					
+			</div>
+			
+			<br><br>
+			
+			<div>
+			  
+			 	<table width="100%" border="1" style="border:0px solid #F06A00" height="100%">
+			 		<tr>
+				        <th>Sr No.</th>
+				        <th>Description </th>
+				        <th>Size </th>
+				        <th>Sq Ft./KG </th>
+				        <th>Price </th>
+				        <th>Total </th>
+				    </tr>
+				    <tr>
+				        <td>1</td>
+				        <td><label id="desc11"></label></td>
+				        <td><label id="size11"></label> * <label id="siz11"></label> </td>
+				        <td><label id="sqft11"></label></td>
+				        <td><label id="price11"></label> </td>
+				        <td><label id="total11"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="desc12"></label></td>
+				        <td><label id="size12"></label> * <label id="siz12"></label> </td>
+				        <td><label id="sqft12"></label></td>
+				        <td><label id="price12"></label> </td>
+				        <td><label id="total12"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="desc13"></label></td>
+				        <td><label id="size13"></label> * <label id="siz13"></label> </td>
+				        <td><label id="sqft13"></label></td>
+				        <td><label id="price13"></label> </td>
+				        <td><label id="total13"></label> </td>
+				    </tr>
+				    <!--Second-->
+				     <tr>
+				        <td>2</td>
+				        <td><label id="descb11"></label></td>
+				        <td><label id="sizeb11"></label> * <label id="sizb11"></label> </td>
+				        <td><label id="sqftb11"></label></td>
+				        <td><label id="priceb11"></label> </td>
+				        <td><label id="totalb11"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="descb12"></label></td>
+				        <td><label id="sizeb12"></label> * <label id="sizb12"></label> </td>
+				        <td><label id="sqftb12"></label></td>
+				        <td><label id="priceb12"></label> </td>
+				        <td><label id="totalb12"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="descb13"></label></td>
+				        <td><label id="sizeb13"></label> * <label id="sizb13"></label> </td>
+				        <td><label id="sqftb13"></label></td>
+				        <td><label id="priceb13"></label> </td>
+				        <td><label id="totalb13"></label> </td>
+				    </tr>
+				    <!--Third-->
+				     <tr>
+				        <td>3</td>
+				        <td><label id="descc11"></label></td>
+				        <td><label id="sizec11"></label> * <label id="sizc11"></label> </td>
+				        <td><label id="sqftc11"></label></td>
+				        <td><label id="pricec11"></label> </td>
+				        <td><label id="totalc11"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="descc12"></label></td>
+				        <td><label id="sizec12"></label> * <label id="sizc12"></label> </td>
+				        <td><label id="sqftc12"></label></td>
+				        <td><label id="pricec12"></label> </td>
+				        <td><label id="totalc12"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="descc13"></label></td>
+				        <td><label id="sizec13"></label> * <label id="sizc13"></label> </td>
+				        <td><label id="sqftc13"></label></td>
+				        <td><label id="pricec13"></label> </td>
+				        <td><label id="totalc13"></label> </td>
+				    </tr>
+				    <!--Fourth-->
+				     <tr>
+				        <td>4</td>
+				        <td><label id="descd11"></label></td>
+				        <td><label id="sized11"></label> * <label id="sizd11"></label> </td>
+				        <td><label id="sqftd11"></label></td>
+				        <td><label id="priced11"></label> </td>
+				        <td><label id="totald11"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="descd12"></label></td>
+				        <td><label id="sized12"></label> * <label id="sizd12"></label> </td>
+				        <td><label id="sqftd12"></label></td>
+				        <td><label id="priced12"></label> </td>
+				        <td><label id="totald12"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="descd13"></label></td>
+				        <td><label id="sized13"></label> * <label id="sizd13"></label> </td>
+				        <td><label id="sqftd13"></label></td>
+				        <td><label id="priced13"></label> </td>
+				        <td><label id="totald13"></label> </td>
+				    </tr>
+				    <!--Fifth-->
+				     <tr>
+				        <td>5</td>
+				        <td><label id="desce11"></label></td>
+				        <td><label id="sizee11"></label> * <label id="sizf11"></label> </td>
+				        <td><label id="sqfte11"></label></td>
+				        <td><label id="pricee11"></label> </td>
+				        <td><label id="totale11"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="desce12"></label></td>
+				        <td><label id="sizee12"></label> * <label id="sizf12"></label> </td>
+				        <td><label id="sqfte12"></label></td>
+				        <td><label id="pricee12"></label> </td>
+				        <td><label id="totale12"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td><label id="desce13"></label></td>
+				        <td><label id="sizee13"></label> * <label id="sizf13"></label> </td>
+				        <td><label id="sqfte13"></label></td>
+				        <td><label id="pricee13"></label> </td>
+				        <td><label id="totale13"></label> </td>
+				    </tr>
+				    <tr>
+				        <td></td>
+				        <td></td>
+				        <td></td>
+				        <td>Total amount:</td>
+				        <td></td>
+				        <td><label id="grandTotal"></label></td>
+				    </tr>
+			 	</table>
+			</div>
+
+			<!-- <div class="col-lg-12" style="border:1px solid #F77053"></div> -->
+
+			<!-- <div style="clear: both">
+				<div class="row">
+					<div class="col-lg-6"></div>
+					<div class="col-lg-6"><b>Remarks :</b><br>_______________________________________________<br></div>
+				</div>
+
+			</div> -->
+
+			<!-- <div>
+			 	<table width="100%">
+			 		<tr>
+				        <td></td>
+				        <td><b>Remark :</b></td>
+				    </tr>
+				</table>
+			</div> -->
+<!-- 
+			<div style="clear: both">
+				<div class="row">
+					<div class="col-lg-6" style="float:centre;">
+						_______________________________________________
+						<br>Signature 
+						<br><b>Ganesh Fabrication</b>
+					</div>
+					<div class="col-lg-6"><b>Note :</b><br>All amounts are tax excluded.Tax will be extra.
+					<br>50% Advance at the time of confirming order.</div>
+				</div>
+
+			</div> -->
+			<div>
+			  
+			 	<table width="100%">
+				    <tr>
+				        <td><br></br>
+							<b>Bank: Bank of Baroda</b><br>
+							<b>Branch: Vasna </b><br>
+							<b>A/c No.: 18250200000332</b><br>
+							<b>IFSC Code: BARB0VASNAR(Fifth Figure is Zero)</b><br>
+						</td>
+				        <td>
+							<br></br>
+							<br></br><div class="myClass1" >
+													<br>
+								                     <br>
+			                                       <b> <div style="color: #F06A00;">For Ganesh Fabrication </div></b>
+							 </div>
+						</td>
+				    </tr>
+				</table>
+					
+			</div>
+				
+        </div> <!-- /.container-->
+        <button id="btn" onclick="printPage()">Generate PDF</button>
+    </body>
+    <script>
+    function myFunction() {
+			    //var txt =  document.getElementById("textTo").value;
+			    var textto =  document.getElementById("textTo").value;
+			    var textsubject =  document.getElementById("textSubject").value;
+
+			    var textto1 =  document.getElementById("textTo1").value;
+			    var textsubject1 =  document.getElementById("textSubject1").value;
+
+			    var textto2 =  document.getElementById("textTo2").value;
+			    var textsubject2 =  document.getElementById("textSubject2").value;
+			    
+			    var txt1 =  document.getElementById("firstDescMain").value;
+			    var txt2 =  document.getElementById("firstSizeMainFirst").value;
+			    var txt3 =  document.getElementById("firstSizeMainSecond").value;
+			    var txt4 =  document.getElementById("firstSqFTMain").value;
+			    var txt5 =  document.getElementById("firstPriceMain").value;
+			    var txt6 =  document.getElementById("firstTotalMain").value;
+
+			    var txt7 =  document.getElementById("secondDescMain").value;
+			    var txt8 =  document.getElementById("secondSizeMainFirst").value;
+			    var txt9 =  document.getElementById("secondSizeMainSecond").value;
+			    var txt10 =  document.getElementById("secondSqFTMain").value;
+			    var txt11 =  document.getElementById("secondPriceMain").value;
+			    var txt12 =  document.getElementById("secondTotalMain").value;
+
+			    var txt13 =  document.getElementById("thirdDescMain").value;
+			    var txt14 =  document.getElementById("thirdSizeMainFirst").value;
+			    var txt15 =  document.getElementById("thirdSizeMainSecond").value;
+			    var txt16 =  document.getElementById("thirdSqFTMain").value;
+			    var txt17 =  document.getElementById("thirdPriceMain").value;
+			    var txt18 =  document.getElementById("thirdTotalMain").value;
+
+			    //second
+
+			    var txtb1 =  document.getElementById("firstDescMain1").value;
+			    var txtb2 =  document.getElementById("firstSizeMainFirst1").value;
+			    var txtb3 =  document.getElementById("firstSizeMainSecond1").value;
+			    var txtb4 =  document.getElementById("firstSqFTMain1").value;
+			    var txtb5 =  document.getElementById("firstPriceMain1").value;
+			    var txtb6 =  document.getElementById("firstTotalMain1").value;
+
+			    var txtb7 =  document.getElementById("secondDescMain1").value;
+			    var txtb8 =  document.getElementById("secondSizeMainFirst1").value;
+			    var txtb9 =  document.getElementById("secondSizeMainSecond1").value;
+			    var txtb10 =  document.getElementById("secondSqFTMain1").value;
+			    var txtb11 =  document.getElementById("secondPriceMain1").value;
+			    var txtb12 =  document.getElementById("secondTotalMain1").value;
+
+			    var txtb13 =  document.getElementById("thirdDescMain1").value;
+			    var txtb14 =  document.getElementById("thirdSizeMainFirst1").value;
+			    var txtb15 =  document.getElementById("thirdSizeMainSecond1").value;
+			    var txtb16 =  document.getElementById("thirdSqFTMain1").value;
+			    var txtb17 =  document.getElementById("thirdPriceMain1").value;
+			    var txtb18 =  document.getElementById("thirdTotalMain1").value;
+
+
+			    //third
+
+			    var txtc1 =  document.getElementById("firstDescMain2").value;
+			    var txtc2 =  document.getElementById("firstSizeMainFirst2").value;
+			    var txtc3 =  document.getElementById("firstSizeMainSecond2").value;
+			    var txtc4 =  document.getElementById("firstSqFTMain2").value;
+			    var txtc5 =  document.getElementById("firstPriceMain2").value;
+			    var txtc6 =  document.getElementById("firstTotalMain2").value;
+
+			    var txtc7 =  document.getElementById("secondDescMain2").value;
+			    var txtc8 =  document.getElementById("secondSizeMainFirst2").value;
+			    var txtc9 =  document.getElementById("secondSizeMainSecond2").value;
+			    var txtc10 =  document.getElementById("secondSqFTMain2").value;
+			    var txtc11 =  document.getElementById("secondPriceMain2").value;
+			    var txtc12 =  document.getElementById("secondTotalMain2").value;
+
+			    var txtc13 =  document.getElementById("thirdDescMain2").value;
+			    var txtc14 =  document.getElementById("thirdSizeMainFirst2").value;
+			    var txtc15 =  document.getElementById("thirdSizeMainSecond2").value;
+			    var txtc16 =  document.getElementById("thirdSqFTMain2").value;
+			    var txtc17 =  document.getElementById("thirdPriceMain2").value;
+			    var txtc18 =  document.getElementById("thirdTotalMain2").value;
+
+			     //Fourth
+
+			    var txtd1 =  document.getElementById("firstDescMain3").value;
+			    var txtd2 =  document.getElementById("firstSizeMainFirst3").value;
+			    var txtd3 =  document.getElementById("firstSizeMainSecond3").value;
+			    var txtd4 =  document.getElementById("firstSqFTMain3").value;
+			    var txtd5 =  document.getElementById("firstPriceMain3").value;
+			    var txtd6 =  document.getElementById("firstTotalMain3").value;
+
+			    var txtd7 =  document.getElementById("secondDescMain3").value;
+			    var txtd8 =  document.getElementById("secondSizeMainFirst3").value;
+			    var txtd9 =  document.getElementById("secondSizeMainSecond3").value;
+			    var txtd10 =  document.getElementById("secondSqFTMain3").value;
+			    var txtd11 =  document.getElementById("secondPriceMain3").value;
+			    var txtd12 =  document.getElementById("secondTotalMain3").value;
+
+			    var txtd13 =  document.getElementById("thirdDescMain3").value;
+			    var txtd14 =  document.getElementById("thirdSizeMainFirst3").value;
+			    var txtd15 =  document.getElementById("thirdSizeMainSecond3").value;
+			    var txtd16 =  document.getElementById("thirdSqFTMain3").value;
+			    var txtd17 =  document.getElementById("thirdPriceMain3").value;
+			    var txtd18 =  document.getElementById("thirdTotalMain3").value;
+
+			    //Fifth
+
+			    var txte1 =  document.getElementById("firstDescMain4").value;
+			    var txte2 =  document.getElementById("firstSizeMainFirst4").value;
+			    var txte3 =  document.getElementById("firstSizeMainSecond4").value;
+			    var txte4 =  document.getElementById("firstSqFTMain4").value;
+			    var txte5 =  document.getElementById("firstPriceMain4").value;
+			    var txte6 =  document.getElementById("firstTotalMain4").value;
+
+			    var txte7 =  document.getElementById("secondDescMain4").value;
+			    var txte8 =  document.getElementById("secondSizeMainFirst4").value;
+			    var txte9 =  document.getElementById("secondSizeMainSecond4").value;
+			    var txte10 =  document.getElementById("secondSqFTMain4").value;
+			    var txte11 =  document.getElementById("secondPriceMain4").value;
+			    var txte12 =  document.getElementById("secondTotalMain4").value;
+
+			    var txte13 =  document.getElementById("thirdDescMain4").value;
+			    var txte14 =  document.getElementById("thirdSizeMainFirst4").value;
+			    var txte15 =  document.getElementById("thirdSizeMainSecond4").value;
+			    var txte16 =  document.getElementById("thirdSqFTMain4").value;
+			    var txte17 =  document.getElementById("thirdPriceMain4").value;
+			    var txte18 =  document.getElementById("thirdTotalMain4").value;
+
+			    var grandTotal = document.getElementById("grandTotal1").value;
+
+			    document.getElementById("containGenerate").style.display = '';
+			    document.getElementById("contain").style.display = 'none';
+
+			   
+			   document.getElementById("textToData").innerHTML = textto;
+			   document.getElementById("subjectToData").innerHTML = textsubject;
+
+			   document.getElementById("textToData1").innerHTML = textto1;
+			   document.getElementById("subjectToData1").innerHTML = textsubject1;
+
+			   document.getElementById("textToData2").innerHTML = textto2;
+			   document.getElementById("subjectToData2").innerHTML = textsubject2;
+
+
+			   document.getElementById("desc11").innerHTML = txt1;
+			   document.getElementById("size11").innerHTML = txt2;
+			   document.getElementById("siz11").innerHTML = txt3;
+			   document.getElementById("sqft11").innerHTML = txt4;
+			   document.getElementById("price11").innerHTML = txt5;
+			    document.getElementById("total11").innerHTML = txt6;
+
+			    document.getElementById("desc12").innerHTML = txt7;
+			   document.getElementById("size12").innerHTML = txt8;
+			   document.getElementById("siz12").innerHTML = txt9;
+			   document.getElementById("sqft12").innerHTML = txt10;
+			   document.getElementById("price12").innerHTML = txt11;
+			    document.getElementById("total12").innerHTML = txt12;
+
+			    document.getElementById("desc13").innerHTML = txt13;
+			   document.getElementById("size13").innerHTML = txt14;
+			   document.getElementById("siz13").innerHTML = txt15;
+			   document.getElementById("sqft13").innerHTML = txt16;
+			   document.getElementById("price13").innerHTML = txt17;
+			    document.getElementById("total13").innerHTML = txt18;
+			    //Second Data
+			     document.getElementById("descb11").innerHTML = txtb1;
+			   document.getElementById("sizeb11").innerHTML = txtb2;
+			   document.getElementById("sizb11").innerHTML = txtb3;
+			   document.getElementById("sqftb11").innerHTML = txtb4;
+			   document.getElementById("priceb11").innerHTML = txtb5;
+			    document.getElementById("totalb11").innerHTML = txtb6;
+
+			    document.getElementById("descb12").innerHTML = txtb7;
+			   document.getElementById("sizeb12").innerHTML = txtb8;
+			   document.getElementById("sizb12").innerHTML = txtb9;
+			   document.getElementById("sqftb12").innerHTML = txtb10;
+			   document.getElementById("priceb12").innerHTML = txtb11;
+			    document.getElementById("totalb12").innerHTML = txtb12;
+
+			    document.getElementById("descb13").innerHTML = txtb13;
+			   document.getElementById("sizeb13").innerHTML = txtb14;
+			   document.getElementById("sizb13").innerHTML = txtb15;
+			   document.getElementById("sqftb13").innerHTML = txtb16;
+			   document.getElementById("priceb13").innerHTML = txtb17;
+			    document.getElementById("totalb13").innerHTML = txtb18;
+
+			    //Third Data
+			     document.getElementById("descc11").innerHTML = txtc1;
+			   document.getElementById("sizec11").innerHTML = txtc2;
+			   document.getElementById("sizc11").innerHTML = txtc3;
+			   document.getElementById("sqftc11").innerHTML = txtc4;
+			   document.getElementById("pricec11").innerHTML = txtc5;
+			    document.getElementById("totalc11").innerHTML = txtc6;
+
+			    document.getElementById("descc12").innerHTML = txtc7;
+			   document.getElementById("sizec12").innerHTML = txtc8;
+			   document.getElementById("sizc12").innerHTML = txtc9;
+			   document.getElementById("sqftc12").innerHTML = txtc10;
+			   document.getElementById("pricec12").innerHTML = txtc11;
+			    document.getElementById("totalc12").innerHTML = txtc12;
+
+			    document.getElementById("descc13").innerHTML = txtc13;
+			   document.getElementById("sizec13").innerHTML = txtc14;
+			   document.getElementById("sizc13").innerHTML = txtc15;
+			   document.getElementById("sqftc13").innerHTML = txtc16;
+			   document.getElementById("pricec13").innerHTML = txtc17;
+			    document.getElementById("totalc13").innerHTML = txtc18;
+
+			     //Fourth Data
+			     document.getElementById("descd11").innerHTML = txtd1;
+			   document.getElementById("sized11").innerHTML = txtd2;
+			   document.getElementById("sizd11").innerHTML = txtd3;
+			   document.getElementById("sqftd11").innerHTML = txtd4;
+			   document.getElementById("priced11").innerHTML = txtd5;
+			    document.getElementById("totald11").innerHTML = txtd6;
+
+			    document.getElementById("descd12").innerHTML = txtd7;
+			   document.getElementById("sized12").innerHTML = txtd8;
+			   document.getElementById("sizd12").innerHTML = txtd9;
+			   document.getElementById("sqftd12").innerHTML = txtd10;
+			   document.getElementById("priced12").innerHTML = txtd11;
+			    document.getElementById("totald12").innerHTML = txtd12;
+
+			    document.getElementById("descd13").innerHTML = txtd13;
+			   document.getElementById("sized13").innerHTML = txtd14;
+			   document.getElementById("sizd13").innerHTML = txtd15;
+			   document.getElementById("sqftd13").innerHTML = txtd16;
+			   document.getElementById("priced13").innerHTML = txtd17;
+			    document.getElementById("totald13").innerHTML = txtd18;
+
+
+			     //Fifth Data
+			     document.getElementById("desce11").innerHTML = txte1;
+			   document.getElementById("sizee11").innerHTML = txte2;
+			   document.getElementById("sizf11").innerHTML = txte3;
+			   document.getElementById("sqfte11").innerHTML = txte4;
+			   document.getElementById("pricee11").innerHTML = txte5;
+			    document.getElementById("totale11").innerHTML = txte6;
+
+			    document.getElementById("desce12").innerHTML = txte7;
+			   document.getElementById("sizee12").innerHTML = txte8;
+			   document.getElementById("sizf12").innerHTML = txte9;
+			   document.getElementById("sqfte12").innerHTML = txte10;
+			   document.getElementById("pricee12").innerHTML = txte11;
+			    document.getElementById("totale12").innerHTML = txte12;
+
+			    document.getElementById("desce13").innerHTML = txte13;
+			   document.getElementById("sizee13").innerHTML = txte14;
+			   document.getElementById("sizf13").innerHTML = txte15;
+			   document.getElementById("sqfte13").innerHTML = txte16;
+			   document.getElementById("pricee13").innerHTML = txte17;
+			    document.getElementById("totale13").innerHTML = txte18;
+
+
+			    //Final total
+			    document.getElementById("grandTotal").innerHTML = grandTotal;
+
+			}
+    </script>
+</html>
+
