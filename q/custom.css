@@ -3,11 +3,7 @@
 }
 
 @media print {
-    @page {
-        size: A4 portrait;
-        margin: 0; 
-    }  
-     
+
     /* Your styles here */
     #btn {
     	display:  none;
