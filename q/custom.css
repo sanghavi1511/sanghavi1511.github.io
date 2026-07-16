@@ -1,9 +1,47 @@
-.container {
-  border: 2px solid #F77053;
-}
+
 
 @media print {
+    @page {
+        size: A4 portrait;
+        margin: 0; 
+    }
 
+    /* 2. Lock down the viewpoint container */
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Hard limit: stops data from making a 2nd page */
+        background: #ffffff;
+    }
+
+    /* 3. TARGET YOUR BUTTON: Completely hide it from the final PDF/Printout */
+    #btn {
+        display: none !important;
+    }
+
+    /* 4. SHRINK ALL DATA TO FIT PERFECTLY
+       Wrap your data inside a container (e.g., <div class="print-wrapper">) 
+       and use the transform scale trick below. */
+    .container {
+        width: 210mm !important; /* Lock structural width to A4 width */
+        height: 297mm !important; /* Lock structural height to A4 height */
+        
+        transform-origin: top left;
+        
+        /* 💡 THE CURE FOR "TOO MUCH DATA":
+           If your data cuts off at the bottom, decrease this number (e.g., 0.60 or 0.50).
+           If it's too small and has extra space, increase it closer to 1.0. */
+        transform: scale(0.70); 
+        
+        padding: 15mm; /* Inner page margins for your data */
+        box-sizing: border-box;
+        
+        /* Keeps CSS colors, backgrounds, and shadows accurate in the PDF */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
     /* Your styles here */
     #btn {
     	display:  none;
