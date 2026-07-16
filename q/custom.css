@@ -3,10 +3,7 @@
 }
 
 @media print {
-      @page {
-        size: A4 portrait;
-        margin: 0; /* Removes default browser headers/footers */
-    }
+
     /* Your styles here */
     #btn {
     	display:  none;
