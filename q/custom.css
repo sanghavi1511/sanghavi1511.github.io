@@ -8,15 +8,7 @@
         margin: 0; 
     }
 
-    /* 2. Lock down the viewpoint container */
-    html, body {
-        width: 210mm;
-        height: 297mm;
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Hard limit: stops data from making a 2nd page */
-        background: #ffffff;
-    }
+   
 
     /* 3. TARGET YOUR BUTTON: Completely hide it from the final PDF/Printout */
     #btn {
