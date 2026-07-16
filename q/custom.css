@@ -8,6 +8,34 @@
         size: A4 portrait;
         margin: 0; 
     }
+
+    /* Force the canvas to match A4 structural boundaries */
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 15mm; /* Dynamic padding for clean document borders */
+        box-sizing: border-box;
+        background: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Target and hide elements you don't want on paper (like your print button) */
+    .no-print {
+        display: none !important;
+    }
+
+    /* Prevent text or sections from breaking awkwardly across non-existent pages */
+    p, blockquote, table, tr, img, .section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Emergency Shrink: If content is tight, slightly decrease font size */
+    body {
+        font-size: 11pt; 
+    }
     /* Your styles here */
     #btn {
     	display:  none;
